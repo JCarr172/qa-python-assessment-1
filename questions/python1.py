@@ -184,7 +184,7 @@ def six(string, int, char):
 			return False
 	else:
 		return False
-print(six("Hi-There",10,'e'))
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -207,7 +207,12 @@ print(six("Hi-There",10,'e'))
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	string = inputString.split(' ')
+	string = ''.join(string)
+	if char in string:
+		return (string.find(char))+1
+	else:
+		return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
