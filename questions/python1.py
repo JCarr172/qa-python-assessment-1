@@ -239,8 +239,17 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	numbers = arg1.split()
+	totals = []
+	for i in range(0, len(numbers)):
+		total = 0
+		for digit in range(0,len(numbers[i])):
+			total += int(numbers[i][digit])
+		totals.append(total)
+	totals.sort()
+	return totals[-1]
 
+print(eight("55 72 86"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 9>
