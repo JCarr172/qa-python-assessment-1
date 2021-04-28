@@ -98,7 +98,6 @@ def three(input):
 	
 	return vowel
 
-print(three("Hello"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 4>
@@ -120,7 +119,17 @@ print(three("Hello"))
 
 
 def four(input):
-    return False
+	if 'ei' in input.lower():
+		if 'cei' in input.lower():
+			return True
+		else:
+			return False
+	elif 'ie' in input.lower():
+		if 'cie' in input.lower():
+			return False
+		else:
+			return True	
+	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
