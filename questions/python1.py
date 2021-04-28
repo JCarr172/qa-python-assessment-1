@@ -274,10 +274,14 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	string = input.split('bert')
-	print(string)
-	return ""
-
+	input = input.lower()
+	if input.count('bert') < 2:
+		print(input.count('bert'))
+		return ""
+	else:
+		splits = input.split('bert')
+		return splits[1]
+	
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
@@ -314,6 +318,5 @@ def ten(input):
 	name_list = list(names)
 	return name_list
 
-print( ten("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
