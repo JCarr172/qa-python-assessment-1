@@ -249,7 +249,6 @@ def eight(arg1):
 	totals.sort()
 	return totals[-1]
 
-print(eight("55 72 86"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 9>
@@ -275,6 +274,8 @@ print(eight("55 72 86"))
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
+	string = input.split('bert')
+	print(string)
 	return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -305,7 +306,14 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+	list_ = input.split(',')
+	names = set()
+	for i in range(2,len(list_),4):
+		if list_[i] == 'False':
+			names.add(list_[i-2])
+	name_list = list(names)
+	return name_list
 
+print( ten("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
