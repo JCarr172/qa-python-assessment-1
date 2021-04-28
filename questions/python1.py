@@ -66,7 +66,12 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	output = ''
+	if arg1%3 == 0: output += 'fizz'
+	if arg1%5 == 0: output += 'buzz'
+	if len(output) == 0: output = 'null'
+	return output
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
